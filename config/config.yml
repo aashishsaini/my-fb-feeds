@@ -1,0 +1,8 @@
+development:
+    FB_SECRET : '64eb5d0bb39341dbbbee97d04b05c8f4'
+    FB_APP_ID : '156387914515136'
+    url : 'http://localhost:3000'
+production:
+    FB_SECRET : '61621a847147d18e2d12139dd99e50d9'
+    FB_APP_ID : '215962525195050'
+    url : 'http://my-fb-feeds.herokuapp.com'

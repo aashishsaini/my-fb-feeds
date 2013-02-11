@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My FB Feeds</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="body_bg_color">
+<div class="container">
+  <div class="hgt_100">
+    <h2 class="flt-lt">My FB Feeds</h2>
+    <%if current_user%>
+        <div class="flt-rt">
+          <table>
+            <tr>
+              <td rowspan="2"><%=image_tag current_user.fb_profile_pic, :class => "user_image"%></td>
+              <td class="user_name">Welcome <%=current_user.first_name.to_s%></td>
+            </tr>
+            <tr>
+              <td><%= link_to "Sign out",  {:controller => "user_sessions",:action => "destroy"},:class => "signout", :id => "sign_out"%></td>
+            </tr>
+          </table>
+        </div>
+    <%end%>
+  </div>
+  <div style="color:red;" align="center" id="error_div"><%= flash[:error] %></div>
+  <div style="color:green;" align="center" id="success_div"><%= flash[:notice] %></div>
+  <%= yield %>
+</div>
+<script type="text/javascript">
+    var fb_app_id = "<%= APP_CONFIG['FB_APP_ID'] %>"
+    var callback_url = "<%= APP_CONFIG['url'] %>"
+    function fbConnect()
+    {
+        mylink = "https://graph.facebook.com/oauth/authorize?client_id="+fb_app_id+"&display=popup&redirect_uri="+callback_url+"/auth/facebook&scope=email,offline_access,user_birthday,user_about_me,user_hometown,user_location,user_online_presence,user_photos,publish_stream";
+        if (! window.focus)return true;
+        var href;
+
+        window.open(mylink, 'facebook', 'width=640,height=340,scrollbars=no');
+        return false;
+    }
+
+</script>
+</body>
+</html>
+
+
+

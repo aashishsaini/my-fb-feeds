@@ -1,0 +1,1425 @@
+Completed   in 121658ms
+Connecting to database specified by database.yml
+
+
+Started GET "/login" for 127.0.0.1 at 2013-02-11 18:24:20 +0530
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/new.html.erb within layouts/application (2.7ms)
+Compiled user_sessions.css  (78ms)  (pid 13590)
+Compiled users.css  (1ms)  (pid 13590)
+Compiled application.css  (90ms)  (pid 13590)
+Compiled jquery.js  (1ms)  (pid 13590)
+Compiled jquery_ujs.js  (0ms)  (pid 13590)
+Compiled facebook_login.js  (0ms)  (pid 13590)
+Compiled user_sessions.js  (187ms)  (pid 13590)
+Compiled users.js  (0ms)  (pid 13590)
+Compiled application.js  (323ms)  (pid 13590)
+Completed 200 OK in 618ms (Views: 497.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-11 18:24:21 +0530
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2013-02-11 18:24:21 +0530
+Served asset /user_sessions.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2013-02-11 18:24:21 +0530
+Served asset /user_sessions.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-02-11 18:24:21 +0530
+Served asset /users.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-11 18:24:21 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/facebook_login.js?body=1" for 127.0.0.1 at 2013-02-11 18:24:21 +0530
+Served asset /facebook_login.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-11 18:24:21 +0530
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-02-11 18:24:21 +0530
+Served asset /users.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-11 18:24:21 +0530
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/fb_login.png" for 127.0.0.1 at 2013-02-11 18:24:21 +0530
+Served asset /fb_login.png - 304 Not Modified (5ms)
+
+
+Started GET "/auth/facebook?code=AQB0Ibo3tELOZ_C2welLCcVIFfB5c9Ddauk355lYaWKo8dSmFNCmsCS4brR2Rj0rRGxyVR1qgjlAiAogBjBxR3YBWM-RY8oCiHiqo_26DdDOkeU1E69QXhpF_t60rcjTMWQyMEeDRz9X7WYUGsozUYRe91kOHZxAlkUbNMiP8DiedSSM_PB4w8ofR_AO1TdZzJMwvUs3H3xVJs9DA6DvyNJJ" for 127.0.0.1 at 2013-02-11 18:24:28 +0530
+
+
+Started GET "/auth/facebook/callback?state=ca695c72bb4baad3c9732d2769ee20e54d1fffbf87aa5c97&code=AQD-KkPwAG6GZmBfv1312HY-4x7gxrJn475Equ6tjMjPF2dnnyTQEiyBViWPFERPQwiQSFX9rw_glSbPF7fPuiT1oK0CCsApGKEwCS9KqElAR1Je1xWbf4xPzckYvbMQQSN-oakTKUY5Wge3S_fQ-0V-3f0a0smscG6IT-SNHe-gAr7qStVrQxrJCnXMxxzVicUICyfxVapI8DzFcYGGi84D" for 127.0.0.1 at 2013-02-11 18:24:29 +0530
+Processing by UserOauthController#create as HTML
+  Parameters: {"state"=>"ca695c72bb4baad3c9732d2769ee20e54d1fffbf87aa5c97", "code"=>"AQD-KkPwAG6GZmBfv1312HY-4x7gxrJn475Equ6tjMjPF2dnnyTQEiyBViWPFERPQwiQSFX9rw_glSbPF7fPuiT1oK0CCsApGKEwCS9KqElAR1Je1xWbf4xPzckYvbMQQSN-oakTKUY5Wge3S_fQ-0V-3f0a0smscG6IT-SNHe-gAr7qStVrQxrJCnXMxxzVicUICyfxVapI8DzFcYGGi84D", "provider"=>"facebook"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'ashish198907@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mUPDATE `users` SET `perishable_token` = 'qrvVUp7gRqjtr7DayK5', `updated_at` = '2013-02-11 12:54:32' WHERE `users`.`id` = 1[0m
+  [1m[35m (42.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  UPDATE `users` SET `perishable_token` = '7uKDl4GTKFfOQZe90Z', `updated_at` = '2013-02-11 12:54:32' WHERE `users`.`id` = 1
+  [1m[36m (52.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mFeed Load (0.3ms)[0m  [1mSELECT `feeds`.* FROM `feeds` WHERE `feeds`.`user_id` = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 12:54:34', '2013-02-11T05:31:20+0000', '100000194094875_607482035934927', '\"Happy B\'day sir...\" on Dev Singh\'s timeline.', '2013-02-11 12:54:34', 1)[0m
+  [1m[35m (60.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 12:54:34', '2013-02-09T07:50:41+0000', '100000194094875_606434132706384', 'Ashish Sharma likes Facebook Developers.', '2013-02-11 12:54:34', 1)
+  [1m[36m (38.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 12:54:34', '2013-02-07T05:03:29+0000', '100000194094875_605319102817887', 'Ashish Sharma and Monu Chauhan are now friends.', '2013-02-11 12:54:34', 1)[0m
+  [1m[35m (47.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 12:54:35', '2013-02-07T04:18:25+0000', '100000194094875_605303752819422', 'Ashish Sharma likes Just For Fun Quizzes.', '2013-02-11 12:54:35', 1)
+  [1m[36m (48.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 12:54:35', '2013-02-06T19:06:40+0000', '100000194094875_605082226174908', '\"Happy b\'day\" on Gaurav Mittal\'s timeline.', '2013-02-11 12:54:35', 1)[0m
+  [1m[35m (46.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (1, '2013-02-11 12:54:35', '2013-02-05T11:26:47+0000', '100000194094875_604351199581344', NULL, '2013-02-11 12:54:35', 1)
+  [1m[36m (48.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 12:54:35', '2013-02-02T18:23:08+0000', '100000194094875_602890676394063', NULL, '2013-02-11 12:54:35', 1)[0m
+  [1m[35m (47.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 12:54:35', '2013-02-02T10:00:38+0000', '100000194094875_602707383079059', 'Ashish Sharma and Ankush Goswami are now friends.', '2013-02-11 12:54:35', 1)
+  [1m[36m (47.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 12:54:35', '2013-02-01T05:13:05+0000', '100000194094875_602124079804056', 'Ashish Sharma and Arvind Dagar are now friends.', '2013-02-11 12:54:35', 1)[0m
+  [1m[35m (48.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 12:54:35', '2013-01-30T05:48:37+0000', '100000194094875_596457430370721', 'Ashish Sharma and Ashok Yadav are now friends.', '2013-02-11 12:54:35', 1)
+  [1m[36m (47.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 12:54:35', '2013-01-30T05:01:48+0000', '100000194094875_596439923705805', '\"perfect!!!!\" on Amrendra Singh\'s photo.', '2013-02-11 12:54:35', 1)[0m
+  [1m[35m (48.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 12:54:35', '2013-01-30T04:14:46+0000', '100000194094875_596421123707685', '\"Happy B\'day\" on Ankit Arora\'s timeline.', '2013-02-11 12:54:35', 1)
+  [1m[36m (40.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 12:54:35', '2013-01-28T11:18:09+0000', '100000194094875_595599770456487', 'Ashish Sharma was tagged in JokingCobra\'s photo.', '2013-02-11 12:54:35', 1)[0m
+  [1m[35m (39.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 12:54:35', '2013-01-28T06:01:15+0000', '100000194094875_595465703803227', 'Ashish Sharma likes a photo.', '2013-02-11 12:54:35', 1)
+  [1m[36m (39.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 12:54:35', '2013-01-27T13:28:37+0000', '100000194094875_595089890507475', '\"party...\" on Baljeet Singh Bachu\'s status.', '2013-02-11 12:54:35', 1)[0m
+  [1m[35m (39.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (3, '2013-02-11 12:54:35', '2013-01-26T08:06:44+0000', '100000194094875_594396567243474', 'Ashish Sharma was tagged in JokingCobra\'s photo.', '2013-02-11 12:54:35', 1)
+  [1m[36m (40.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 12:54:35', '2013-01-25T06:10:21+0000', '100000194094875_431000393640604', 'Ashish Sharma shared Did you know?\'s photo.', '2013-02-11 12:54:35', 1)[0m
+  [1m[35m (40.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 12:54:35', '2013-01-24T17:18:32+0000', '100000194094875_593281520688312', 'Ashish Sharma is now friends with Sourabh Shankar and Parveen Sharma.', '2013-02-11 12:54:35', 1)
+  [1m[36m (39.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 12:54:35', '2013-01-24T17:00:17+0000', '100000194094875_593275640688900', 'Ashish Sharma likes maroozle.', '2013-02-11 12:54:35', 1)[0m
+  [1m[35m (47.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 12:54:35', '2013-01-22T05:53:07+0000', '100000194094875_591910640825400', '\"thanks\" on his own photo.', '2013-02-11 12:54:35', 1)
+  [1m[36m (39.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 12:54:35', '2013-01-22T05:52:40+0000', '100000194094875_593688707314635', 'Ashish Sharma shared JUst KIdding\'s photo.', '2013-02-11 12:54:35', 1)[0m
+  [1m[35m (40.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/users
+Completed 302 Found in 3300ms (ActiveRecord: 1045.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-02-11 18:24:35 +0530
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mFeed Load (0.4ms)[0m  SELECT `feeds`.* FROM `feeds` WHERE `feeds`.`user_id` = 1
+  Rendered users/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-11 18:24:35 +0530
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2013-02-11 18:24:35 +0530
+Served asset /user_sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-11 18:24:35 +0530
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-11 18:24:35 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-02-11 18:24:35 +0530
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook_login.js?body=1" for 127.0.0.1 at 2013-02-11 18:24:35 +0530
+Served asset /facebook_login.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2013-02-11 18:24:35 +0530
+Served asset /user_sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-02-11 18:24:35 +0530
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-11 18:24:35 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-11 18:24:36 +0530
+Processing by UserSessionsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-02-11 18:24:36 +0530
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mFeed Load (0.4ms)[0m  [1mSELECT `feeds`.* FROM `feeds` WHERE `feeds`.`user_id` = 1[0m
+  Rendered users/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2013-02-11 18:24:36 +0530
+Served asset /user_sessions.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-11 18:24:36 +0530
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/facebook_login.js?body=1" for 127.0.0.1 at 2013-02-11 18:24:36 +0530
+Served asset /facebook_login.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-11 18:24:36 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-11 18:24:36 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-02-11 18:24:36 +0530
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2013-02-11 18:24:36 +0530
+Served asset /user_sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-02-11 18:24:36 +0530
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-11 18:24:36 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2013-02-11 18:24:42 +0530
+Processing by UserSessionsController#destroy as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Redirected to http://localhost:3000/login
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-02-11 18:24:42 +0530
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-11 18:24:42 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-02-11 18:24:42 +0530
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-11 18:24:42 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2013-02-11 18:24:42 +0530
+Served asset /user_sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook_login.js?body=1" for 127.0.0.1 at 2013-02-11 18:24:42 +0530
+Served asset /facebook_login.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-11 18:24:42 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2013-02-11 18:24:42 +0530
+Served asset /user_sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-11 18:24:42 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-02-11 18:24:42 +0530
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fb_login.png" for 127.0.0.1 at 2013-02-11 18:24:42 +0530
+Served asset /fb_login.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20130211064432)
+Migrating to CreateFeeds (20130211111919)
+  [1m[35m (0.3ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+
+
+Started GET "/login" for 127.0.0.1 at 2013-02-11 19:13:21 +0530
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/new.html.erb within layouts/application (2.8ms)
+Compiled user_sessions.css  (7ms)  (pid 15623)
+Compiled users.css  (0ms)  (pid 15623)
+Compiled application.css  (53ms)  (pid 15623)
+Compiled jquery.js  (1ms)  (pid 15623)
+Compiled jquery_ujs.js  (0ms)  (pid 15623)
+Compiled facebook_login.js  (0ms)  (pid 15623)
+Compiled user_sessions.js  (51ms)  (pid 15623)
+Compiled users.js  (1ms)  (pid 15623)
+Compiled application.js  (117ms)  (pid 15623)
+Completed 200 OK in 445ms (Views: 328.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-11 19:13:22 +0530
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2013-02-11 19:13:22 +0530
+Served asset /user_sessions.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-11 19:13:22 +0530
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/facebook_login.js?body=1" for 127.0.0.1 at 2013-02-11 19:13:22 +0530
+Served asset /facebook_login.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-11 19:13:22 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-02-11 19:13:22 +0530
+Served asset /users.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2013-02-11 19:13:22 +0530
+Served asset /user_sessions.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-02-11 19:13:22 +0530
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-11 19:13:22 +0530
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/fb_login.png" for 127.0.0.1 at 2013-02-11 19:13:22 +0530
+Served asset /fb_login.png - 304 Not Modified (5ms)
+
+
+Started GET "/auth/facebook?code=AQDHODzQkZZBVEVk4jL6y84oc_G82Lyf92Xd_-X2ot1WOB2TVXpyCgkd-2dHKHy_O9qTaRxLk7h6kbp4hf4dc58CGZNhdayFWiFRYZA4ZAZG_58WhXJGz5Oj-jzp8AyfcWSz1q0LtZoH0A1InLvioqBqaKDxOqKE8erpJfWL_KZnIeaLPGHK1EcAnoHoamjqz4Dq7SuwlFGorfmmkqFT67jG" for 127.0.0.1 at 2013-02-11 19:13:25 +0530
+
+
+Started GET "/auth/facebook/callback?state=6687e2a706d0f9e1cbe2788a4f36baaa6bbd1e152aef676f&code=AQBugFnXtb8hPBWe38b3hZNKhZwU6QXcQOSw0ZlxIGSERV6yHDsIusUINRk-UsC7VOu4Kthjs9EvCw38jufGFU5lwuVfo3g4ZZ-mewnaWvw17WYjea4kLzYEEHBkfFUL_8rNrhw-srDw4yUYrRDAjYfIg--rrxIN30x2G5RX3TBA5o0NX5IZ41xKFm1daGFj_wKLbnDKCOpAPAxPrUWXN07u" for 127.0.0.1 at 2013-02-11 19:13:26 +0530
+Processing by UserOauthController#create as HTML
+  Parameters: {"state"=>"6687e2a706d0f9e1cbe2788a4f36baaa6bbd1e152aef676f", "code"=>"AQBugFnXtb8hPBWe38b3hZNKhZwU6QXcQOSw0ZlxIGSERV6yHDsIusUINRk-UsC7VOu4Kthjs9EvCw38jufGFU5lwuVfo3g4ZZ-mewnaWvw17WYjea4kLzYEEHBkfFUL_8rNrhw-srDw4yUYrRDAjYfIg--rrxIN30x2G5RX3TBA5o0NX5IZ41xKFm1daGFj_wKLbnDKCOpAPAxPrUWXN07u", "provider"=>"facebook"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'ashish198907@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mUPDATE `users` SET `perishable_token` = 'SdclS7FRvY1RcIxA3c8', `updated_at` = '2013-02-11 13:43:30' WHERE `users`.`id` = 1[0m
+  [1m[35m (36.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  UPDATE `users` SET `perishable_token` = 'Vp8BsW2fTlZj7r1L7iX', `updated_at` = '2013-02-11 13:43:30' WHERE `users`.`id` = 1
+  [1m[36m (34.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mFeed Load (0.4ms)[0m  [1mSELECT `feeds`.* FROM `feeds` WHERE `feeds`.`user_id` = 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM `feeds` WHERE `feeds`.`id` = 177[0m
+  [1m[35m (34.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `feeds` WHERE `feeds`.`id` = 178
+  [1m[36m (32.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM `feeds` WHERE `feeds`.`id` = 179[0m
+  [1m[35m (40.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM `feeds` WHERE `feeds`.`id` = 180
+  [1m[36m (40.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM `feeds` WHERE `feeds`.`id` = 181[0m
+  [1m[35m (40.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `feeds` WHERE `feeds`.`id` = 182
+  [1m[36m (40.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `feeds` WHERE `feeds`.`id` = 183[0m
+  [1m[35m (40.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM `feeds` WHERE `feeds`.`id` = 184
+  [1m[36m (78.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM `feeds` WHERE `feeds`.`id` = 185[0m
+  [1m[35m (135.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM `feeds` WHERE `feeds`.`id` = 186
+  [1m[36m (40.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM `feeds` WHERE `feeds`.`id` = 187[0m
+  [1m[35m (40.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `feeds` WHERE `feeds`.`id` = 188
+  [1m[36m (40.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `feeds` WHERE `feeds`.`id` = 189[0m
+  [1m[35m (40.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM `feeds` WHERE `feeds`.`id` = 190
+  [1m[36m (81.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM `feeds` WHERE `feeds`.`id` = 191[0m
+  [1m[35m (39.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM `feeds` WHERE `feeds`.`id` = 192
+  [1m[36m (40.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `feeds` WHERE `feeds`.`id` = 193[0m
+  [1m[35m (40.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM `feeds` WHERE `feeds`.`id` = 194
+  [1m[36m (41.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `feeds` WHERE `feeds`.`id` = 195[0m
+  [1m[35m (32.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `feeds` WHERE `feeds`.`id` = 196
+  [1m[36m (32.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM `feeds` WHERE `feeds`.`id` = 197[0m
+  [1m[35m (32.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 13:43:33', '2013-02-11T05:31:20+0000', '100000194094875_607482035934927', '\"Happy B\'day sir...\" on Dev Singh\'s timeline.', '2013-02-11 13:43:33', 1)
+  [1m[36m (121.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 13:43:33', '2013-02-09T07:50:41+0000', '100000194094875_606434132706384', 'Ashish Sharma likes Facebook Developers.', '2013-02-11 13:43:33', 1)[0m
+  [1m[35m (31.0ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 13:43:33', '2013-02-07T05:03:29+0000', '100000194094875_605319102817887', 'Ashish Sharma and Monu Chauhan are now friends.', '2013-02-11 13:43:33', 1)
+  [1m[36m (31.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 13:43:33', '2013-02-07T04:18:25+0000', '100000194094875_605303752819422', 'Ashish Sharma likes Just For Fun Quizzes.', '2013-02-11 13:43:33', 1)[0m
+  [1m[35m (30.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 13:43:33', '2013-02-06T19:06:40+0000', '100000194094875_605082226174908', '\"Happy b\'day\" on Gaurav Mittal\'s timeline.', '2013-02-11 13:43:33', 1)
+  [1m[36m (31.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (1, '2013-02-11 13:43:33', '2013-02-05T11:26:47+0000', '100000194094875_604351199581344', NULL, '2013-02-11 13:43:33', 1)[0m
+  [1m[35m (32.0ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 13:43:33', '2013-02-02T18:23:08+0000', '100000194094875_602890676394063', NULL, '2013-02-11 13:43:33', 1)
+  [1m[36m (31.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 13:43:33', '2013-02-02T10:00:38+0000', '100000194094875_602707383079059', 'Ashish Sharma and Ankush Goswami are now friends.', '2013-02-11 13:43:33', 1)[0m
+  [1m[35m (30.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 13:43:33', '2013-02-01T05:13:05+0000', '100000194094875_602124079804056', 'Ashish Sharma and Arvind Dagar are now friends.', '2013-02-11 13:43:33', 1)
+  [1m[36m (31.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 13:43:33', '2013-01-30T05:48:37+0000', '100000194094875_596457430370721', 'Ashish Sharma and Ashok Yadav are now friends.', '2013-02-11 13:43:33', 1)[0m
+  [1m[35m (30.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 13:43:33', '2013-01-30T05:01:48+0000', '100000194094875_596439923705805', '\"perfect!!!!\" on Amrendra Singh\'s photo.', '2013-02-11 13:43:33', 1)
+  [1m[36m (88.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 13:43:33', '2013-01-30T04:14:46+0000', '100000194094875_596421123707685', '\"Happy B\'day\" on Ankit Arora\'s timeline.', '2013-02-11 13:43:33', 1)[0m
+  [1m[35m (66.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 13:43:33', '2013-01-28T11:18:09+0000', '100000194094875_595599770456487', 'Ashish Sharma was tagged in JokingCobra\'s photo.', '2013-02-11 13:43:33', 1)
+  [1m[36m (39.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 13:43:33', '2013-01-28T06:01:15+0000', '100000194094875_595465703803227', 'Ashish Sharma likes a photo.', '2013-02-11 13:43:33', 1)[0m
+  [1m[35m (30.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 13:43:33', '2013-01-27T13:28:37+0000', '100000194094875_595089890507475', '\"party...\" on Baljeet Singh Bachu\'s status.', '2013-02-11 13:43:33', 1)
+  [1m[36m (39.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (3, '2013-02-11 13:43:33', '2013-01-26T08:06:44+0000', '100000194094875_594396567243474', 'Ashish Sharma was tagged in JokingCobra\'s photo.', '2013-02-11 13:43:33', 1)[0m
+  [1m[35m (39.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 13:43:33', '2013-01-25T06:10:21+0000', '100000194094875_431000393640604', 'Ashish Sharma shared Did you know?\'s photo.', '2013-02-11 13:43:33', 1)
+  [1m[36m (39.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 13:43:33', '2013-01-24T17:18:32+0000', '100000194094875_593281520688312', 'Ashish Sharma is now friends with Sourabh Shankar and Parveen Sharma.', '2013-02-11 13:43:33', 1)[0m
+  [1m[35m (39.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 13:43:33', '2013-01-24T17:00:17+0000', '100000194094875_593275640688900', 'Ashish Sharma likes maroozle.', '2013-02-11 13:43:33', 1)
+  [1m[36m (39.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 13:43:33', '2013-01-22T05:53:07+0000', '100000194094875_591910640825400', '\"thanks\" on his own photo.', '2013-02-11 13:43:33', 1)[0m
+  [1m[35m (38.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/users
+Completed 302 Found in 3989ms (ActiveRecord: 1942.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-02-11 19:13:34 +0530
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mFeed Load (0.4ms)[0m  SELECT `feeds`.* FROM `feeds` WHERE `feeds`.`user_id` = 1
+  Rendered users/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-11 19:13:34 +0530
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-02-11 19:13:34 +0530
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2013-02-11 19:13:34 +0530
+Served asset /user_sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-11 19:13:34 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-11 19:13:34 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/facebook_login.js?body=1" for 127.0.0.1 at 2013-02-11 19:13:34 +0530
+Served asset /facebook_login.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2013-02-11 19:13:34 +0530
+Served asset /user_sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-02-11 19:13:34 +0530
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-11 19:13:34 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-11 19:13:34 +0530
+Processing by UserSessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-02-11 19:13:34 +0530
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mFeed Load (0.4ms)[0m  [1mSELECT `feeds`.* FROM `feeds` WHERE `feeds`.`user_id` = 1[0m
+  Rendered users/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-11 19:13:34 +0530
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2013-02-11 19:13:34 +0530
+Served asset /user_sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-02-11 19:13:34 +0530
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-11 19:13:34 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook_login.js?body=1" for 127.0.0.1 at 2013-02-11 19:13:34 +0530
+Served asset /facebook_login.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-11 19:13:34 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2013-02-11 19:13:34 +0530
+Served asset /user_sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-02-11 19:13:34 +0530
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-11 19:13:34 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2013-02-11 19:13:36 +0530
+Processing by UserSessionsController#destroy as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Redirected to http://localhost:3000/login
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-02-11 19:13:36 +0530
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2013-02-11 19:13:36 +0530
+Served asset /user_sessions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-11 19:13:36 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/facebook_login.js?body=1" for 127.0.0.1 at 2013-02-11 19:13:36 +0530
+Served asset /facebook_login.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-02-11 19:13:36 +0530
+Served asset /users.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-11 19:13:36 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-11 19:13:36 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2013-02-11 19:13:36 +0530
+Served asset /user_sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-02-11 19:13:36 +0530
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-11 19:13:36 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/fb_login.png" for 127.0.0.1 at 2013-02-11 19:13:36 +0530
+Served asset /fb_login.png - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/login" for 127.0.0.1 at 2013-02-11 19:36:20 +0530
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 218ms (Views: 103.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-11 19:36:21 +0530
+Served asset /application.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2013-02-11 19:36:21 +0530
+Served asset /user_sessions.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/facebook_login.js?body=1" for 127.0.0.1 at 2013-02-11 19:36:21 +0530
+Served asset /facebook_login.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-11 19:36:21 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-11 19:36:21 +0530
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-02-11 19:36:21 +0530
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2013-02-11 19:36:21 +0530
+Served asset /user_sessions.js - 304 Not Modified (50ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-02-11 19:36:21 +0530
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-11 19:36:21 +0530
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/fb_login.png" for 127.0.0.1 at 2013-02-11 19:36:21 +0530
+Served asset /fb_login.png - 304 Not Modified (1ms)
+
+
+Started GET "/auth/facebook?code=AQCmHJLt3j8WRVyijue_7yT5T3dzErAv783Zqp0Xis86WrNbzQMIiPxM3WzqhTalrYK-rfWvLC_9_b0eTC4YgYzO37AgQwKM-4EZ5BF7Ng29JP8qsdirJCmcrAl2Z9zrQEwLKg7BCOJsVBCqe1RsdBHMnvqaxEezCw6qB1SkOH45YKcI67cxghZONLpw6WljauIh-wJCcJ77IS0suCuEcoSv" for 127.0.0.1 at 2013-02-11 19:36:25 +0530
+
+
+Started GET "/auth/facebook/callback?state=28c02848c858cafa948bf0a295c9be65c6fb8f3bd1238d0e&code=AQAOOz0uP2_LwqXBTlHheK8XDmU0mopqHZsmYezyUDnmExN9MQsmVbM5IUptgu5Jw4RIEUnyhTVFdr0CsbKv8qkJDJW3J39XRVVwNMxgm-lW6QyztEQEERlr-UuZKUlfo-cReZH1xtNcK4TGlMBA3oO2BBZmk_h9-fj2YGAu02GZDjHUDgVR9BiNBjRyh0vUoUxCbzv58bZgowTbmFOUdYjS" for 127.0.0.1 at 2013-02-11 19:36:26 +0530
+Processing by UserOauthController#create as HTML
+  Parameters: {"state"=>"28c02848c858cafa948bf0a295c9be65c6fb8f3bd1238d0e", "code"=>"AQAOOz0uP2_LwqXBTlHheK8XDmU0mopqHZsmYezyUDnmExN9MQsmVbM5IUptgu5Jw4RIEUnyhTVFdr0CsbKv8qkJDJW3J39XRVVwNMxgm-lW6QyztEQEERlr-UuZKUlfo-cReZH1xtNcK4TGlMBA3oO2BBZmk_h9-fj2YGAu02GZDjHUDgVR9BiNBjRyh0vUoUxCbzv58bZgowTbmFOUdYjS", "provider"=>"facebook"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'ashish198907@gmail.com' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mUPDATE `users` SET `perishable_token` = 'gyetT0EzlIU8S2g7KpU', `updated_at` = '2013-02-11 14:06:29' WHERE `users`.`id` = 1[0m
+  [1m[35m (78.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  UPDATE `users` SET `perishable_token` = 'eHL01nBBDbRLBWBX1Brv', `updated_at` = '2013-02-11 14:06:29' WHERE `users`.`id` = 1
+  [1m[36m (36.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mFeed Load (0.3ms)[0m  [1mSELECT `feeds`.* FROM `feeds` WHERE `feeds`.`user_id` = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM `feeds` WHERE `feeds`.`id` = 198[0m
+  [1m[35m (43.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM `feeds` WHERE `feeds`.`id` = 199
+  [1m[36m (31.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM `feeds` WHERE `feeds`.`id` = 200[0m
+  [1m[35m (31.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM `feeds` WHERE `feeds`.`id` = 201
+  [1m[36m (32.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM `feeds` WHERE `feeds`.`id` = 202[0m
+  [1m[35m (187.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM `feeds` WHERE `feeds`.`id` = 203
+  [1m[36m (32.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM `feeds` WHERE `feeds`.`id` = 204[0m
+  [1m[35m (32.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM `feeds` WHERE `feeds`.`id` = 205
+  [1m[36m (32.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM `feeds` WHERE `feeds`.`id` = 206[0m
+  [1m[35m (31.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `feeds` WHERE `feeds`.`id` = 207
+  [1m[36m (41.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM `feeds` WHERE `feeds`.`id` = 208[0m
+  [1m[35m (32.0ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `feeds` WHERE `feeds`.`id` = 209
+  [1m[36m (32.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `feeds` WHERE `feeds`.`id` = 210[0m
+  [1m[35m (32.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `feeds` WHERE `feeds`.`id` = 211
+  [1m[36m (32.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `feeds` WHERE `feeds`.`id` = 212[0m
+  [1m[35m (32.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM `feeds` WHERE `feeds`.`id` = 213
+  [1m[36m (32.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `feeds` WHERE `feeds`.`id` = 214[0m
+  [1m[35m (32.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM `feeds` WHERE `feeds`.`id` = 215
+  [1m[36m (40.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM `feeds` WHERE `feeds`.`id` = 216[0m
+  [1m[35m (40.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM `feeds` WHERE `feeds`.`id` = 217
+  [1m[36m (40.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 14:06:32', '2013-02-11T05:31:20+0000', '100000194094875_607482035934927', '\"Happy B\'day sir...\" on Dev Singh\'s timeline.', '2013-02-11 14:06:32', 1)[0m
+  [1m[35m (69.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 14:06:32', '2013-02-09T07:50:41+0000', '100000194094875_606434132706384', 'Ashish Sharma likes Facebook Developers.', '2013-02-11 14:06:32', 1)
+  [1m[36m (39.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 14:06:32', '2013-02-07T05:03:29+0000', '100000194094875_605319102817887', 'Ashish Sharma and Monu Chauhan are now friends.', '2013-02-11 14:06:32', 1)[0m
+  [1m[35m (39.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 14:06:32', '2013-02-07T04:18:25+0000', '100000194094875_605303752819422', 'Ashish Sharma likes Just For Fun Quizzes.', '2013-02-11 14:06:32', 1)
+  [1m[36m (39.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 14:06:32', '2013-02-06T19:06:40+0000', '100000194094875_605082226174908', '\"Happy b\'day\" on Gaurav Mittal\'s timeline.', '2013-02-11 14:06:32', 1)[0m
+  [1m[35m (39.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (1, '2013-02-11 14:06:32', '2013-02-05T11:26:47+0000', '100000194094875_604351199581344', NULL, '2013-02-11 14:06:32', 1)
+  [1m[36m (38.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 14:06:32', '2013-02-02T18:23:08+0000', '100000194094875_602890676394063', NULL, '2013-02-11 14:06:32', 1)[0m
+  [1m[35m (39.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 14:06:32', '2013-02-02T10:00:38+0000', '100000194094875_602707383079059', 'Ashish Sharma and Ankush Goswami are now friends.', '2013-02-11 14:06:32', 1)
+  [1m[36m (39.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 14:06:32', '2013-02-01T05:13:05+0000', '100000194094875_602124079804056', 'Ashish Sharma and Arvind Dagar are now friends.', '2013-02-11 14:06:32', 1)[0m
+  [1m[35m (57.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 14:06:32', '2013-01-30T05:48:37+0000', '100000194094875_596457430370721', 'Ashish Sharma and Ashok Yadav are now friends.', '2013-02-11 14:06:32', 1)
+  [1m[36m (147.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 14:06:32', '2013-01-30T05:01:48+0000', '100000194094875_596439923705805', '\"perfect!!!!\" on Amrendra Singh\'s photo.', '2013-02-11 14:06:32', 1)[0m
+  [1m[35m (63.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 14:06:32', '2013-01-30T04:14:46+0000', '100000194094875_596421123707685', '\"Happy B\'day\" on Ankit Arora\'s timeline.', '2013-02-11 14:06:32', 1)
+  [1m[36m (30.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 14:06:32', '2013-01-28T11:18:09+0000', '100000194094875_595599770456487', 'Ashish Sharma was tagged in JokingCobra\'s photo.', '2013-02-11 14:06:32', 1)[0m
+  [1m[35m (31.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 14:06:32', '2013-01-28T06:01:15+0000', '100000194094875_595465703803227', 'Ashish Sharma likes a photo.', '2013-02-11 14:06:32', 1)
+  [1m[36m (31.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 14:06:33', '2013-01-27T13:28:37+0000', '100000194094875_595089890507475', '\"party...\" on Baljeet Singh Bachu\'s status.', '2013-02-11 14:06:33', 1)[0m
+  [1m[35m (31.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (3, '2013-02-11 14:06:33', '2013-01-26T08:06:44+0000', '100000194094875_594396567243474', 'Ashish Sharma was tagged in JokingCobra\'s photo.', '2013-02-11 14:06:33', 1)
+  [1m[36m (30.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 14:06:33', '2013-01-25T06:10:21+0000', '100000194094875_431000393640604', 'Ashish Sharma shared Did you know?\'s photo.', '2013-02-11 14:06:33', 1)[0m
+  [1m[35m (30.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 14:06:33', '2013-01-24T17:18:32+0000', '100000194094875_593281520688312', 'Ashish Sharma is now friends with Sourabh Shankar and Parveen Sharma.', '2013-02-11 14:06:33', 1)
+  [1m[36m (31.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 14:06:33', '2013-01-24T17:00:17+0000', '100000194094875_593275640688900', 'Ashish Sharma likes maroozle.', '2013-02-11 14:06:33', 1)[0m
+  [1m[35m (31.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `feeds` (`comment_count`, `created_at`, `feed_creation_time`, `feed_id`, `story`, `updated_at`, `user_id`) VALUES (0, '2013-02-11 14:06:33', '2013-01-22T05:53:07+0000', '100000194094875_591910640825400', '\"thanks\" on his own photo.', '2013-02-11 14:06:33', 1)
+  [1m[36m (31.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 4094ms (ActiveRecord: 1871.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-02-11 19:36:33 +0530
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mFeed Load (0.3ms)[0m  [1mSELECT `feeds`.* FROM `feeds` WHERE `feeds`.`user_id` = 1[0m
+  Rendered users/index.html.erb within layouts/application (53.5ms)
+Completed 200 OK in 62ms (Views: 61.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-11 19:36:33 +0530
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2013-02-11 19:36:33 +0530
+Served asset /user_sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-11 19:36:33 +0530
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-02-11 19:36:33 +0530
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook_login.js?body=1" for 127.0.0.1 at 2013-02-11 19:36:33 +0530
+Served asset /facebook_login.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-11 19:36:33 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2013-02-11 19:36:33 +0530
+Served asset /user_sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-02-11 19:36:33 +0530
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-11 19:36:33 +0530
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-11 19:36:33 +0530
+Processing by UserSessionsController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Redirected to http://localhost:3000/users
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-02-11 19:36:33 +0530
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mFeed Load (0.4ms)[0m  SELECT `feeds`.* FROM `feeds` WHERE `feeds`.`user_id` = 1
+  Rendered users/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2013-02-11 19:36:33 +0530
+Served asset /user_sessions.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-11 19:36:33 +0530
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-02-11 19:36:33 +0530
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-11 19:36:33 +0530
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-11 19:36:33 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook_login.js?body=1" for 127.0.0.1 at 2013-02-11 19:36:33 +0530
+Served asset /facebook_login.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2013-02-11 19:36:33 +0530
+Served asset /user_sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-02-11 19:36:33 +0530
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-11 19:36:33 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/users" for 127.0.0.1 at 2013-02-11 20:04:15 +0530
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mFeed Load (0.3ms)[0m  SELECT `feeds`.* FROM `feeds` WHERE `feeds`.`user_id` = 1
+  Rendered users/index.html.erb within layouts/application (178.8ms)
+Completed 200 OK in 245ms (Views: 241.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-11 20:04:16 +0530
+Served asset /application.css - 304 Not Modified (45ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-11 20:04:16 +0530
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-11 20:04:16 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-02-11 20:04:16 +0530
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2013-02-11 20:04:16 +0530
+Served asset /user_sessions.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/facebook_login.js?body=1" for 127.0.0.1 at 2013-02-11 20:04:16 +0530
+Served asset /facebook_login.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2013-02-11 20:04:16 +0530
+Served asset /user_sessions.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-02-11 20:04:16 +0530
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-11 20:04:16 +0530
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/update_fb_status?status=This%20is%20a%20test%20post" for 127.0.0.1 at 2013-02-11 20:04:31 +0530
+Processing by UsersController#update_fb_status as */*
+  Parameters: {"status"=>"This is a test post"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 75029ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-02-11 20:07:51 +0530
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mFeed Load (0.4ms)[0m  [1mSELECT `feeds`.* FROM `feeds` WHERE `feeds`.`user_id` = 1[0m
+  Rendered users/index.html.erb within layouts/application (98.8ms)
+Compiled application.css  (1ms)  (pid 17383)
+Completed 200 OK in 131ms (Views: 128.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-11 20:07:52 +0530
+Served asset /application.css - 200 OK (15ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-11 20:07:52 +0530
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2013-02-11 20:07:52 +0530
+Served asset /user_sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-11 20:07:52 +0530
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-02-11 20:07:52 +0530
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/facebook_login.js?body=1" for 127.0.0.1 at 2013-02-11 20:07:52 +0530
+Served asset /facebook_login.js - 200 OK (0ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2013-02-11 20:07:52 +0530
+Served asset /user_sessions.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-02-11 20:07:52 +0530
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-11 20:07:52 +0530
+Served asset /application.js - 200 OK (3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-02-11 20:08:04 +0530
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mFeed Load (0.4ms)[0m  [1mSELECT `feeds`.* FROM `feeds` WHERE `feeds`.`user_id` = 1[0m
+  Rendered users/index.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 79ms (Views: 77.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-11 20:08:04 +0530
+Served asset /application.css - 200 OK (8ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-02-11 20:08:04 +0530
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-11 20:08:04 +0530
+Served asset /jquery.js - 200 OK (5ms)
+
+
+Started GET "/assets/facebook_login.js?body=1" for 127.0.0.1 at 2013-02-11 20:08:04 +0530
+Served asset /facebook_login.js - 200 OK (0ms)
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2013-02-11 20:08:04 +0530
+Served asset /user_sessions.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-11 20:08:04 +0530
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2013-02-11 20:08:04 +0530
+Served asset /user_sessions.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-11 20:08:04 +0530
+Served asset /application.js - 200 OK (5ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-02-11 20:08:05 +0530
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-02-11 20:08:58 +0530
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mFeed Load (0.3ms)[0m  [1mSELECT `feeds`.* FROM `feeds` WHERE `feeds`.`user_id` = 1[0m
+  Rendered users/index.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-11 20:08:58 +0530
+Served asset /application.css - 200 OK (13ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-11 20:08:58 +0530
+Served asset /jquery.js - 200 OK (7ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-02-11 20:08:58 +0530
+Served asset /users.css - 200 OK (1ms)
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2013-02-11 20:08:58 +0530
+Served asset /user_sessions.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-11 20:08:58 +0530
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/facebook_login.js?body=1" for 127.0.0.1 at 2013-02-11 20:08:58 +0530
+Served asset /facebook_login.js - 200 OK (0ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2013-02-11 20:08:58 +0530
+Served asset /user_sessions.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-11 20:08:58 +0530
+Served asset /application.js - 200 OK (5ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-02-11 20:08:58 +0530
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-02-11 20:09:39 +0530
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mFeed Load (0.5ms)[0m  [1mSELECT `feeds`.* FROM `feeds` WHERE `feeds`.`user_id` = 1[0m
+  Rendered users/index.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-11 20:09:39 +0530
+Served asset /application.css - 200 OK (11ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-02-11 20:09:39 +0530
+Served asset /users.css - 200 OK (1ms)
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2013-02-11 20:09:39 +0530
+Served asset /user_sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-11 20:09:39 +0530
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-11 20:09:39 +0530
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/facebook_login.js?body=1" for 127.0.0.1 at 2013-02-11 20:09:39 +0530
+Served asset /facebook_login.js - 200 OK (0ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2013-02-11 20:09:39 +0530
+Served asset /user_sessions.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-02-11 20:09:39 +0530
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-11 20:09:39 +0530
+Served asset /application.js - 200 OK (4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-02-11 20:09:59 +0530
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mFeed Load (0.4ms)[0m  [1mSELECT `feeds`.* FROM `feeds` WHERE `feeds`.`user_id` = 1[0m
+  Rendered users/index.html.erb within layouts/application (51.0ms)
+Completed 200 OK in 64ms (Views: 61.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-11 20:09:59 +0530
+Served asset /application.css - 200 OK (18ms)
+
+
+Started GET "/assets/facebook_login.js?body=1" for 127.0.0.1 at 2013-02-11 20:09:59 +0530
+Served asset /facebook_login.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-11 20:09:59 +0530
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-02-11 20:09:59 +0530
+Served asset /users.css - 200 OK (1ms)
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2013-02-11 20:09:59 +0530
+Served asset /user_sessions.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-11 20:09:59 +0530
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2013-02-11 20:09:59 +0530
+Served asset /user_sessions.js - 200 OK (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-02-11 20:09:59 +0530
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-11 20:09:59 +0530
+Served asset /application.js - 200 OK (2ms)
+
+
+Started GET "/update_fb_status?status=test" for 127.0.0.1 at 2013-02-11 20:10:05 +0530
+Processing by UsersController#update_fb_status as */*
+  Parameters: {"status"=>"test"}
+Completed 200 OK in 6417ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-02-11 20:11:17 +0530
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mFeed Load (0.4ms)[0m  [1mSELECT `feeds`.* FROM `feeds` WHERE `feeds`.`user_id` = 1[0m
+  Rendered users/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-11 20:11:17 +0530
+Served asset /application.css - 200 OK (7ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-02-11 20:11:17 +0530
+Served asset /users.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-11 20:11:17 +0530
+Served asset /jquery.js - 200 OK (1ms)
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2013-02-11 20:11:17 +0530
+Served asset /user_sessions.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-11 20:11:17 +0530
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/facebook_login.js?body=1" for 127.0.0.1 at 2013-02-11 20:11:17 +0530
+Served asset /facebook_login.js - 200 OK (0ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2013-02-11 20:11:17 +0530
+Served asset /user_sessions.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-02-11 20:11:17 +0530
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-11 20:11:17 +0530
+Served asset /application.js - 200 OK (2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-02-11 20:11:44 +0530
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mFeed Load (0.4ms)[0m  [1mSELECT `feeds`.* FROM `feeds` WHERE `feeds`.`user_id` = 1[0m
+  Rendered users/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-11 20:11:44 +0530
+Served asset /application.css - 200 OK (18ms)
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2013-02-11 20:11:44 +0530
+Served asset /user_sessions.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-11 20:11:44 +0530
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-11 20:11:44 +0530
+Served asset /jquery.js - 200 OK (13ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-02-11 20:11:44 +0530
+Served asset /users.css - 200 OK (1ms)
+
+
+Started GET "/assets/facebook_login.js?body=1" for 127.0.0.1 at 2013-02-11 20:11:44 +0530
+Served asset /facebook_login.js - 200 OK (0ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2013-02-11 20:11:44 +0530
+Served asset /user_sessions.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-02-11 20:11:44 +0530
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-11 20:11:44 +0530
+Served asset /application.js - 200 OK (4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-02-11 20:13:20 +0530
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mFeed Load (0.6ms)[0m  [1mSELECT `feeds`.* FROM `feeds` WHERE `feeds`.`user_id` = 1[0m
+  Rendered users/index.html.erb within layouts/application (29.9ms)
+Completed 200 OK in 41ms (Views: 39.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-11 20:13:20 +0530
+Served asset /application.css - 200 OK (9ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-02-11 20:13:20 +0530
+Served asset /users.css - 200 OK (1ms)
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2013-02-11 20:13:20 +0530
+Served asset /user_sessions.css - 200 OK (1ms)
+
+
+Started GET "/assets/facebook_login.js?body=1" for 127.0.0.1 at 2013-02-11 20:13:20 +0530
+Served asset /facebook_login.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-11 20:13:20 +0530
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-11 20:13:20 +0530
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2013-02-11 20:13:20 +0530
+Served asset /user_sessions.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-02-11 20:13:20 +0530
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-11 20:13:20 +0530
+Served asset /application.js - 200 OK (5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-02-11 20:13:45 +0530
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mFeed Load (0.3ms)[0m  [1mSELECT `feeds`.* FROM `feeds` WHERE `feeds`.`user_id` = 1[0m
+  Rendered users/index.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-11 20:13:45 +0530
+Served asset /application.css - 200 OK (18ms)
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2013-02-11 20:13:45 +0530
+Served asset /user_sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/facebook_login.js?body=1" for 127.0.0.1 at 2013-02-11 20:13:45 +0530
+Served asset /facebook_login.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-11 20:13:45 +0530
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-11 20:13:45 +0530
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-02-11 20:13:45 +0530
+Served asset /users.css - 200 OK (1ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2013-02-11 20:13:45 +0530
+Served asset /user_sessions.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-02-11 20:13:45 +0530
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-11 20:13:45 +0530
+Served asset /application.js - 200 OK (3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-02-11 20:14:07 +0530
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mFeed Load (0.5ms)[0m  [1mSELECT `feeds`.* FROM `feeds` WHERE `feeds`.`user_id` = 1[0m
+  Rendered users/index.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-11 20:14:07 +0530
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-02-11 20:14:07 +0530
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-11 20:14:07 +0530
+Served asset /jquery.js - 200 OK (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-11 20:14:07 +0530
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2013-02-11 20:14:07 +0530
+Served asset /user_sessions.css - 200 OK (1ms)
+
+
+Started GET "/assets/facebook_login.js?body=1" for 127.0.0.1 at 2013-02-11 20:14:07 +0530
+Served asset /facebook_login.js - 200 OK (0ms)
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2013-02-11 20:14:07 +0530
+Served asset /user_sessions.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-02-11 20:14:07 +0530
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-11 20:14:07 +0530
+Served asset /application.js - 200 OK (3ms)
+
+
+Started GET "/update_fb_status?status=Test" for 127.0.0.1 at 2013-02-11 20:14:45 +0530
+Processing by UsersController#update_fb_status as */*
+  Parameters: {"status"=>"Test"}
+Completed 200 OK in 4007ms (Views: 0.3ms | ActiveRecord: 0.0ms)
