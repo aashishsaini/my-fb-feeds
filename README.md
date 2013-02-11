@@ -1,0 +1,4 @@
+my-fb-feeds
+===========
+
+Task: Create Website with Tabs Based on Facebook Login  What the site must have: Signup and Login using Facebook Authentication (Facebook API); Stores user details in a MySql database together with the relationship status; Homepage with Signup / Login only; When user is signed up and logged in he gets a page like the one in the image below (image 1) with a tabbed interface relying on Jquery UI.  All must be using: Rails, JQUERY, MYSQL and in AJAX (no page reloading); HOME shows nothing; TAB1 shows user relationship status (you must first save it to the database (when user registers) and serve it from there when user clicks "TAB1"); TAB2 shows whatever you want. Be creative.  TAB3 shows latest user status update on Facebook from database (i.e.: you must check latest status on Facebook and save it to database every time user logs in and when user click "TAB3" serve the content directly from database) Please add a logout button.
